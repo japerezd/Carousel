@@ -1,0 +1,72 @@
+body{
+    display:flex;
+    flex-direction: row;
+    min-height: 100vh;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+}
+
+/* ARROWS */
+.arrow-left, .arrow-right{
+    display: flex;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-left > *, .arrow-right >* {
+    font-size: 6rem;
+    color: gray;
+}
+
+.arrow-left >*:hover, .arrow-right >*:hover{
+    color: rgb(43, 129, 129);
+}
+
+.arrow-left.active i, .arrow-right.active i{
+    display: none;
+}
+
+
+.container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel{
+    display: flex;
+    width: 1200px;
+    height: 800px;
+    transition: transform 0.4s linear;
+}
+
+.points{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    min-width: 100px;
+    min-height: 50px;
+}
+
+.points .active{
+    background-color: rgb(44, 44, 136);
+}
+
+.points > *{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 4px;
+}
+
+img{
+   width: 1200px;
+   height: 800px; 
+   object-fit: cover;
+}
